@@ -8,7 +8,7 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Aspiring UI/UX Design Intern",
+      title: "UI/UX Design Intern",
       company: "Ceeras IT Services", 
       location: "Remote",
       period: "2022 - 2023",
