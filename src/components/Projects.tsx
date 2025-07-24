@@ -30,7 +30,7 @@ const Projects = () => {
       description: "An agricultural decision-support tool that uses AI to help farmers make informed decisions about crop management and optimization.",
       image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&h=400&fit=crop",
       tags: ["React", "AI Integration", "Data Visualization", "TypeScript"],
-      github: "#",
+      github: "https://github.com/jpratik04/CultivAI.git",
       live: "#"
     },
     {
@@ -38,7 +38,7 @@ const Projects = () => {
       description: "A modern, responsive portfolio website showcasing my work with smooth animations and clean design principles.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
       tags: ["React", "TailwindCSS", "Framer Motion", "Responsive Design"],
-      github: "#",
+      github: "https://github.com/jpratik04/Pratik-Joshi-Portfolio.git",
       live: "#"
     }
   ];
