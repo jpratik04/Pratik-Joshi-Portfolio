@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -14,7 +13,7 @@ const Projects = () => {
       description: "A peer-to-peer skill swapping platform that enables individuals to offer and request skills within a trusted community. Whether you're a Photoshop expert looking to learn Excel or a baker wanting to learn web design, TradeWise helps you find the right match — and trade your time and talent, no money involved.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
       tags: ["React", "Node.js", "Community Platform", "Peer-to-Peer"],
-      github: "#",
+      github: "https://github.com/jpratik04/tradewise",
       live: "#"
     },
     {
@@ -22,7 +21,7 @@ const Projects = () => {
       description: "An AI-based personal finance assistant that helps users manage their finances with intelligent insights and automated budgeting.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
       tags: ["React", "AI/ML", "TailwindCSS", "Node.js"],
-      github: "#",
+      github: "https://github.com/jpratik04/project-raseed",
       live: "#"
     },
     {
@@ -107,14 +106,18 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex space-x-3">
-                    <Button variant="outline" size="sm" className="flex-1 bg-transparent border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-500">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button size="sm" className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live
-                    </Button>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="outline" size="sm" className="w-full bg-transparent border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-500">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </Button>
+                    </a>
+                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button size="sm" className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
