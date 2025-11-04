@@ -11,7 +11,7 @@ const Experience = () => {
       title: "UI/UX Design Intern",
       company: "Ceeras IT Services", 
       location: "Remote",
-      period: "2022 - 2023",
+      period: "Feb 2025 - Jun 2025",
       description: "Created user-centered designs for web and mobile applications. Conducted user research and usability testing to inform design decisions. Worked closely with development teams to ensure seamless implementation of design concepts and maintained consistency across multiple projects."
     }
   ];
