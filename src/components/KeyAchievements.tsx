@@ -13,7 +13,7 @@ const KeyAchievements = () => {
       category: "Scholarship"
     },
     {
-      title: "Secretary | MIBCS KKWIEER",
+      title: "Vice President | MIBCS KKWIEER",
       description: "Led and organized numerous club activities and tech events to foster collaboration among members.",
       icon: Star,
       category: "Leadership"
