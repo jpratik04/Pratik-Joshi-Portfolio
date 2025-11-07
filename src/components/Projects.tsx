@@ -1,3 +1,4 @@
+// src/components/Projects.tsx
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -10,110 +11,124 @@ const Projects = () => {
   const projects = [
     {
       title: "TradeWise – Skill Exchange, Simplified",
-      description: "A peer-to-peer skill swapping platform that enables individuals to offer and request skills within a trusted community. Whether you're a Photoshop expert looking to learn Excel or a baker wanting to learn web design, TradeWise helps you find the right match — and trade your time and talent, no money involved.",
+      description:
+        "A peer-to-peer skill swapping platform that enables individuals to trade skills within a trusted community. Whether you're a Photoshop expert or learning Excel, TradeWise helps you find the right match — and trade your time and talent, no money involved.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
       tags: ["React", "Node.js", "Community Platform", "Peer-to-Peer"],
       github: "https://github.com/jpratik04/tradewise",
-      live: "#"
+      live: "#",
     },
     {
       title: "Project Raseed",
-      description: "An AI-based personal finance assistant that helps users manage their finances with intelligent insights and automated budgeting.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      description:
+        "Project Raseed is an AI-powered smart wallet app that simplifies personal finance management through intelligent receipt analysis and real-time spending insights. It leverages Google AI technologies like Gemini and Vertex AI Agent Builder to process multimodal data; including images, text, and transactions and generate meaningful financial insights for users.",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
       tags: ["React", "AI/ML", "TailwindCSS", "Node.js"],
       github: "https://github.com/jpratik04/project-raseed",
-      live: "#"
+      live: "#",
     },
     {
       title: "CultivAI",
-      description: "An agricultural decision-support tool that uses AI to help farmers make informed decisions about crop management and optimization.",
-      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&h=400&fit=crop",
+      description:
+        "CultivAI is an AI-based precision farming platform designed to help farmers make data-driven crop management decisions. It analyzes real-time and historical weather data to predict the next 15 days of weather, offering personalized recommendations on crop selection, planting schedules, irrigation, and soil management. ",
+      image: "https://plus.unsplash.com/premium_photo-1664476493417-2c1fd048a638?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=869",
       tags: ["React", "AI Integration", "Data Visualization", "TypeScript"],
       github: "https://github.com/jpratik04/CultivAI.git",
-      live: "#"
+      live: "#",
     },
     {
       title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing my work with smooth animations and clean design principles.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      description:
+        "My portfolio website is a reflection of my journey as a UI/UX Designer and Frontend Web Developer, built to showcase my skills, design philosophy, and projects in a clean, minimal, and interactive way. Designed and developed from scratch, the site highlights my featured projects, skillset, and professional journey; all wrapped in a responsive, modern interface that adapts beautifully across devices.",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop",
       tags: ["React", "TailwindCSS", "Framer Motion", "Responsive Design"],
       github: "https://github.com/jpratik04/Pratik-Joshi-Portfolio.git",
-      live: "#"
-    }
+      live: "#",
+    },
   ];
 
   return (
     <section id="projects" className="py-20 bg-gradient-to-br from-slate-800 to-gray-900">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div 
+          {/* Title Section */}
+          <div
             ref={titleRef}
             className={`text-center mb-16 transition-all duration-1000 ${
-              titleInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Featured Projects
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Featured Projects</h2>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              A selection of my recent work, showcasing my passion for creating innovative solutions and beautiful user experiences.
+              A selection of my recent work, showcasing my passion for creating innovative solutions and
+              beautiful user experiences.
             </p>
           </div>
 
-          <div 
-            ref={projectsRef}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
+          {/* Project Cards */}
+          <div ref={projectsRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch auto-rows-fr">
             {projects.map((project, index) => (
-              <Card 
+              <Card
                 key={project.title}
-                className={`group hover:shadow-2xl transition-all duration-700 hover:scale-105 transform border-0 shadow-lg bg-gray-900/50 backdrop-blur-sm border border-gray-700 ${
-                  projectsInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+                className={`h-full flex flex-col group hover:shadow-2xl transition-all duration-300 shadow-lg bg-gray-900/50 backdrop-blur-sm border border-gray-700 ${
+                  projectsInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
                 }`}
-                style={{ 
-                  transitionDelay: projectsInView ? `${index * 150}ms` : '0ms'
+                style={{
+                  transitionDelay: projectsInView ? `${index * 120}ms` : "0ms",
                 }}
               >
+                {/* Image */}
                 <div className="relative overflow-hidden rounded-t-lg">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-44 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300" />
                 </div>
-                
-                <CardHeader className="pb-3">
+
+                {/* Header + Description */}
+                <CardHeader className="pb-0">
                   <CardTitle className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </CardTitle>
-                  <CardDescription className="text-gray-300 leading-relaxed">
+                  <CardDescription className="text-gray-300 leading-relaxed mt-2">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
-                
-                <CardContent className="pt-0">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag) => (
-                      <span 
-                        key={tag}
-                        className="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs font-medium rounded-full border border-blue-700"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+
+                {/* Tags + Buttons */}
+                <CardContent className="pt-4 flex-1 flex flex-col justify-between">
+                  <div>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs font-medium rounded-full border border-blue-700"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  
-                  <div className="flex space-x-3">
+
+                  {/* Actions */}
+                  <div className="flex space-x-3 mt-4">
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
-                      <Button variant="outline" size="sm" className="w-full bg-transparent border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-500">
+                      <Button
+                        size="sm"
+                        className="w-full bg-transparent text-gray-300 border border-gray-700 hover:bg-gray-800 hover:text-white"
+                      >
                         <Github className="h-4 w-4 mr-2" />
                         Code
                       </Button>
                     </a>
                     <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex-1">
-                      <Button size="sm" className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+                      <Button
+                        size="sm"
+                        className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white"
+                      >
                         <ExternalLink className="h-4 w-4 mr-2" />
                         Live
                       </Button>
