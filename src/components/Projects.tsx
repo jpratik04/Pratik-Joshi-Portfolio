@@ -18,7 +18,7 @@ const Projects = () => {
       tags: ["React", "AI Integration", "Data Visualization", "TypeScript"],
       github: "https://github.com/jpratik04/CultivAI.git",
       live: "#",
-      prototype: "https://www.figma.com/design/fjfBSIhKh6DrXsLj5m50XU/CultivAI?node-id=0-1&t=Ey1W0OToxBT9XYcL-1"
+      prototype: "https://docs.google.com/document/d/1_xazAnz7JOimd4cr-vfCd65aCfPOYUpsS2UcNnaOmLA/edit?usp=sharing"
     },
     {
       title: "TradeWise – Skill Exchange, Simplified",
