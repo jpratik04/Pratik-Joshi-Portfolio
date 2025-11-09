@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
+import { prototype } from "events";
 
 const Projects = () => {
   const [titleRef, titleInView] = useInView({ threshold: 0.3, triggerOnce: true });
@@ -17,6 +18,7 @@ const Projects = () => {
       tags: ["React", "AI Integration", "Data Visualization", "TypeScript"],
       github: "https://github.com/jpratik04/CultivAI.git",
       live: "#",
+      prototype: "https://www.figma.com/design/fjfBSIhKh6DrXsLj5m50XU/CultivAI?node-id=0-1&t=Ey1W0OToxBT9XYcL-1"
     },
     {
       title: "TradeWise – Skill Exchange, Simplified",
@@ -26,6 +28,7 @@ const Projects = () => {
       tags: ["React", "Node.js", "Community Platform", "Peer-to-Peer"],
       github: "https://github.com/jpratik04/tradewise",
       live: "#",
+      prototype: "#",
     },
     {
       title: "Project Raseed",
@@ -35,6 +38,7 @@ const Projects = () => {
       tags: ["React", "AI/ML", "TailwindCSS", "Node.js"],
       github: "https://github.com/jpratik04/project-raseed",
       live: "#",
+      prototype: "https://www.figma.com/design/JiN0GweDrxzH0WBfLbI500/Project-Raseed?node-id=0-1&t=3469p86q0vb2Ur3J-1",
     },
     {
       title: "Portfolio Website",
@@ -44,6 +48,7 @@ const Projects = () => {
       tags: ["React", "TailwindCSS", "Framer Motion", "Responsive Design"],
       github: "https://github.com/jpratik04/Pratik-Joshi-Portfolio.git",
       live: "#",
+      prototype: "#",
     },
   ];
 
@@ -124,6 +129,20 @@ const Projects = () => {
                         Code
                       </Button>
                     </a>
+
+                    {/* Prototype button for projects that have one */}
+                    {project.prototype ? (
+                      <a href={project.prototype} target="_blank" rel="noopener noreferrer" className="flex-1">
+                        <Button
+                          size="sm"
+                          className="w-full bg-transparent text-purple-300 border border-purple-700 hover:bg-purple-800/20 hover:text-white"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Prototype
+                        </Button>
+                      </a>
+                    ) : null}
+
                     <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex-1">
                       <Button
                         size="sm"
