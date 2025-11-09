@@ -10,6 +10,15 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "CultivAI",
+      description:
+        "CultivAI is an AI-based precision farming platform designed to help farmers make data-driven crop management decisions. It analyzes real-time and historical weather data to predict the next 15 days of weather, offering personalized recommendations on crop selection, planting schedules, irrigation, and soil management. ",
+      image: "https://plus.unsplash.com/premium_photo-1664476493417-2c1fd048a638?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=869",
+      tags: ["React", "AI Integration", "Data Visualization", "TypeScript"],
+      github: "https://github.com/jpratik04/CultivAI.git",
+      live: "#",
+    },
+    {
       title: "TradeWise – Skill Exchange, Simplified",
       description:
         "A peer-to-peer skill swapping platform that enables individuals to trade skills within a trusted community. Whether you're a Photoshop expert or learning Excel, TradeWise helps you find the right match — and trade your time and talent, no money involved.",
@@ -25,15 +34,6 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
       tags: ["React", "AI/ML", "TailwindCSS", "Node.js"],
       github: "https://github.com/jpratik04/project-raseed",
-      live: "#",
-    },
-    {
-      title: "CultivAI",
-      description:
-        "CultivAI is an AI-based precision farming platform designed to help farmers make data-driven crop management decisions. It analyzes real-time and historical weather data to predict the next 15 days of weather, offering personalized recommendations on crop selection, planting schedules, irrigation, and soil management. ",
-      image: "https://plus.unsplash.com/premium_photo-1664476493417-2c1fd048a638?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=869",
-      tags: ["React", "AI Integration", "Data Visualization", "TypeScript"],
-      github: "https://github.com/jpratik04/CultivAI.git",
       live: "#",
     },
     {
