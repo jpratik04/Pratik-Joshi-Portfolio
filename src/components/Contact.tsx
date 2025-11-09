@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Phone, Download } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
@@ -22,7 +21,7 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 to-gray-900">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <div 
+          <div
             ref={titleRef}
             className={`text-center mb-16 transition-all duration-1000 ${
               titleInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -38,7 +37,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div 
+          <div
             ref={contentRef}
             className={`transition-all duration-1000 delay-300 ${
               contentInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
@@ -56,7 +55,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="grid md:grid-cols-3 gap-8">
                 <div className="flex flex-col items-center space-y-4">
                   <div className="w-16 h-16 bg-blue-900/50 rounded-full flex items-center justify-center border border-blue-700">
                     <Mail className="h-8 w-8 text-blue-400" />
@@ -87,25 +86,25 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button
-                  onClick={handleEmailClick}
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                >
-                  <Mail className="h-5 w-5 mr-2" />
-                  Send Email
-                </Button>
-                <Button
-                  onClick={handleDownloadResume}
-                  variant="outline"
-                  className="border-blue-600 bg-blue-600/10 hover:bg-blue-600 text-blue-400 hover:text-white px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                >
-                  <Download className="h-5 w-5 mr-2" />
-                  Download Resume
-                </Button>
-              </div>
+            {/* Action Buttons (moved slightly below for spacing) */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-16">
+              <Button
+                onClick={handleEmailClick}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <Mail className="h-5 w-5 mr-2" />
+                Send Email
+              </Button>
+              <Button
+                onClick={handleDownloadResume}
+                variant="outline"
+                className="border-blue-600 bg-blue-600/10 hover:bg-blue-600 text-blue-400 hover:text-white px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <Download className="h-5 w-5 mr-2" />
+                Download Resume
+              </Button>
             </div>
           </div>
         </div>
