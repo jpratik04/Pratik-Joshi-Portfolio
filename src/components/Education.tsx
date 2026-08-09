@@ -31,9 +31,6 @@ const Education = () => {
                       <GraduationCap className="h-5 w-5 md:h-6 md:w-6 mr-0 sm:mr-3 mb-2 sm:mb-0 text-blue-400 flex-shrink-0" />
                       <span>Bachelor of Technology</span>
                     </h3>
-                    <p className="text-base md:text-lg font-semibold text-blue-400 mb-2">
-                      4th Year (pursuing)
-                    </p>
                     <p className="text-base md:text-lg text-gray-300 mb-2">
                       Artificial Intelligence & Data Science
                     </p>
@@ -41,7 +38,7 @@ const Education = () => {
                   <div className="flex flex-col space-y-2">
                     <div className="flex items-center text-gray-400">
                       <Calendar className="h-4 w-4 mr-2 flex-shrink-0" />
-                      <span className="text-sm">Nov 2022 - Aug 2026</span>
+                      <span className="text-sm">Nov 2022 - Jun 2026</span>
                     </div>
                   </div>
                 </div>
@@ -55,15 +52,14 @@ const Education = () => {
                     <span>Nashik, Maharashtra, India</span>
                   </div>
                   <p className="text-gray-300 text-sm md:text-base">
-                    <span className="font-semibold text-white">CGPA:</span> 6.99
+                    <span className="font-semibold text-white">CGPA:</span> 7.12
                   </p>
                 </div>
 
                 <div className="bg-gray-800/50 rounded-lg p-4">
                   <h4 className="font-semibold text-white mb-2 text-sm md:text-base">Specialization</h4>
                   <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                    Currently pursuing a Bachelor's degree in Artificial Intelligence & Data Science, 
-                    focusing on machine learning, data analysis, and AI applications.
+                  Graduated with a Bachelor of Technology (B.Tech) in Artificial Intelligence & Data Science, with a strong foundation in machine learning, data analysis, and AI application development.
                   </p>
                 </div>
               </div>
