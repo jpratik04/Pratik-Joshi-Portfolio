@@ -8,6 +8,14 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: "AI Intern",
+      company: "Hindustan Aeronautics Limited, Aircraft Division, Nashik", 
+      location: "On site - Nashik",
+      period: "Jan 2026 - Present",
+      description: "Designed and deployed an air-gapped, offline Local RAG + LLM system for secure knowledge retrieval in high-security environments. Built end-to-end processing pipelines for structured and unstructured documents, covering embedding generation, vector indexing, and local inference. Designed the end-to-end UI/UX and optimized system performance for resource-constrained, internet-free hardware."
+    },
+
+    {
       title: "UI/UX Design Intern",
       company: "Ceeras IT Services", 
       location: "Remote",
