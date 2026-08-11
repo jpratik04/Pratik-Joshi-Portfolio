@@ -11,6 +11,14 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "COTS - Content Optimization through Thumbnail Selection",
+      image: "/cots.jpg",
+      description: "A multimodal AI video recommendation framework combining CNN-powered thumbnail analysis with NLP metadata processing. Evaluates thumbnail-metadata consistency, detects clickbait, and uses multimodal embeddings with a vector database to rank videos by relevance and authenticity.",
+      tags: ["Multimodal AI", "CNN", "NLP", "Vector DB", "Embeddings", "Python"],
+      // Add liveUrl, githubUrl, or image if your component uses them
+      category: "AI / ML"
+    },
+    {
       title: "CultivAI",
       description:
         "CultivAI is an AI-based precision farming platform designed to help farmers make data-driven crop management decisions. It analyzes real-time and historical weather data to predict the next 15 days of weather, offering personalized recommendations on crop selection, planting schedules, irrigation, and soil management. ",
