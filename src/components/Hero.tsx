@@ -104,11 +104,11 @@ const Hero = () => {
               Hi, I'm Pratik
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 font-medium">
-              Aspiring UI/UX Designer & Frontend Developer
+              AI Engineer, UI/UX Designer & Developer
             </p>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              Crafting beautiful, responsive web experiences with a passion for clean design and innovative technology. 
-              Currently building AI-integrated applications that make a difference.
+              Crafting intelligent, responsive web systems and state-of-the-art AI architectures. From custom Local RAG pipelines to intuitive user experiences.
+              Building technology that makes an impact.
             </p>
           </div>
 
