@@ -1,4 +1,4 @@
-import { Trophy, Award, Star, Medal } from "lucide-react";
+import { Trophy, Award, Star, Medal, ShieldCheck } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const KeyAchievements = () => {
@@ -6,6 +6,12 @@ const KeyAchievements = () => {
   const [achievementsRef, achievementsInView] = useInView({ threshold: 0.2, triggerOnce: true });
 
   const achievements = [
+    {
+      title: "Government Copyright Grant",
+      description: "Granted official copyright protection by the Copyright Office, Government of India for the Projects 'COTS'.",
+      icon: ShieldCheck,
+      category: "IP & Patent"
+    },
     {
       title: "Reliance Foundation Undergraduate Scholar",
       description: "Awarded a scholarship worth INR 2,00,000 for academic excellence.",
