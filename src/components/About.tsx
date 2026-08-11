@@ -50,9 +50,9 @@ const About = () => {
             >
               <div className="transform transition-all duration-500 hover:translate-y-[-2px]">
                 <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  I'm a passionate aspiring UI/UX Designer and Frontend Web Developer with a love for creating 
-                  clean, responsive web interfaces. My journey in tech is driven by curiosity and a 
-                  desire to build meaningful digital experiences.
+                I'm a passionate AI Engineer, UI/UX Designer, and  Frontend Developer dedicated to building intelligent, secure, and user-centered digital solutions. 
+                My expertise spans developing air-gapped Local RAG architectures and multimodal AI systems to crafting clean, responsive web interfaces. 
+                Driven by curiosity and technical rigor, I bridge the gap between complex AI pipelines and intuitive human experiences; ensuring technology is not only powerful, but effortless to use.
                 </p>
 
                 <p className="text-lg text-gray-300 leading-relaxed mb-8">
